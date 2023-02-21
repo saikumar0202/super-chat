@@ -1,13 +1,13 @@
 .container {
   display: flex;
-  flex-direction: column;
-  height: 100vh;
+  // flex-direction: column;
+  // height: 100vh;
 }
 
 .messages {
   overflow-y: auto;
   padding: 16px;
-  height: calc(100vh - 75px);
+  height: calc(100vh - 75px - 56px);
 }
 
 .message {
