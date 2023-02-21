@@ -46,8 +46,8 @@ export default function SideBar(props: SideBarProps) {
   return (
     <div className={styles.sidebarContaier}>
       <ul className={styles.usersList}>
-        {friends.map((friend) => (
-          <li className={`${styles.usersListItem} ${friend.uid === selectedChatUID && styles.active}`} onClick={() => selectFriend(friend.uid)}>
+        {friends.map((friend, index) => (
+          <li key={index} className={`${styles.usersListItem} ${friend.uid === selectedChatUID && styles.active}`} onClick={() => selectFriend(friend.uid)}>
             <Image alt='profile picture' width="40" className="profile" height="40" src={friend.photoURL} />
             <div className={styles.displayName}>{friend.displayName}</div>
           </li>
