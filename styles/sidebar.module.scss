@@ -1,5 +1,30 @@
 .sidebarContaier {
-  width: 200px;
+  width: 300px;
   background-color: #111b21;
   color: white;
-} 
+  transition: all 0.3s ease;
+  height: 100%;
+}
+.usersList {
+  all: unset;
+}
+
+.usersListItem {
+  //  height: 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 15px;
+  border-bottom: 1px solid #8696a026;
+  cursor: pointer;
+  &.active {
+    font-weight: bold;
+  }
+  &:hover {
+    background-color: #8696a026;
+  }
+}
+
+.displayName {
+  font-size: 16px;
+}

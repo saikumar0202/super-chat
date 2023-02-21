@@ -4,7 +4,7 @@ import styles from "@/styles/Login.module.scss";
 import Head from "next/head";
 import { getAuth, GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import { db } from "../_app";
-import backgroundImage from "@/public/img/login-bg.jpg";
+// import backgroundImage from "@/public/img/login-bg.jpg";
 import {
   addDoc,
   collection,
