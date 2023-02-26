@@ -4,6 +4,7 @@ import { collection, getDocs, limit, query, where } from 'firebase/firestore';
 import Image from 'next/image';
 import { useEffect, useState } from 'react';
 import { useMediaQuery } from 'react-responsive'
+
 interface Friend {
   lastLogin: Date,
   friends: string[],
